@@ -17,7 +17,10 @@ class MovieCell: UITableViewCell {
 
     
     func configureCell(movie: Movie) {
-        coverImage = movie.image
-        titleLabel = movie.title
+        coverImage.image = movie.image
+        titleLabel.text = movie.title
+        yearLabel.text = movie.year
+        directorLabel.text = movie.director
+        genreLabel.text = movie.genre
     }
 }
